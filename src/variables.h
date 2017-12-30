@@ -1,0 +1,24 @@
+//
+// Created by Papoun on 27/12/2017.
+//
+
+#ifndef SOKOBAN_VARIABLES_H
+#define SOKOBAN_VARIABLES_H
+
+#define TAILLE_BLOC         34
+#define NB_BLOCS_LARGEUR    12
+#define NB_BLOCS_HAUTEUR    12
+#define LARGEUR_FENETRE     TAILLE_BLOC * NB_BLOCS_LARGEUR
+#define HAUTEUR_FENETRE     TAILLE_BLOC * NB_BLOCS_HAUTEUR
+#define TITRE_FENETRE       "MARIO SOKOBAN"
+#define KEYBOARD_REPEAT     250
+#define WIN_TEXT            "WIN !!!"
+
+enum {HAUT, BAS, GAUCHE, DROITE};
+enum {VIDE, MUR, CAISSE, CAISSE_OK, OBJECTIF, MARIO};
+
+typedef struct Grid {
+    int tab[NB_BLOCS_LARGEUR][NB_BLOCS_HAUTEUR];
+}Grid;
+
+#endif //SOKOBAN_VARIABLES_H
